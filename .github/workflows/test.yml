@@ -1,0 +1,24 @@
+# GitHub Actions: Test Action
+
+This is a simple GitHub Action that is guaranteed to succeed.
+
+## Test Action
+
+This action will simply print a success message to the console.
+
+## Usage
+
+This action can be triggered manually or as part of a larger workflow.
+
+## Code
+
+```yml
+name: Test Action
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Success Message
+      run: echo "Success!"
+```
